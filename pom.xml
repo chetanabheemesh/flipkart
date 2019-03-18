@@ -15,4 +15,12 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <distributionManagement>
+  <repository>
+	<id>internal.repo</id>
+        <name>MyCo Internal Repository</name>
+        <url>Host to Company Repository</url>
+  </repository>
+  </distributionManagement>
+
 </project>
