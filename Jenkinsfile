@@ -7,7 +7,7 @@ agent any
 		   {
 
 			withMaven(maven : 'Maven 3.6.0'){
-				sh mvn install	
+				sh 'mvn install'
 		   }
 
 		}
@@ -19,7 +19,7 @@ agent any
 
                         withMaven(maven : 'Maven 3.6.0')
 			{
-                                sh mvn test
+                                sh 'mvn test'
                    	}
 
                   }
