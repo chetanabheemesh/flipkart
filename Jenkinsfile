@@ -24,6 +24,19 @@ agent any
 
                   }
                 }
+		stage ('Deployment')
+                {
+                   steps
+                   {
+
+                        withMaven(maven : 'Maven 3.6.0')
+                        {
+                                sh 'mvn deploy'
+                        }
+
+                  }
+                }
+
 
 }
 }
