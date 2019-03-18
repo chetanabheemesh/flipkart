@@ -38,7 +38,7 @@ agent any
 				while read -r line  
 				do
 					echo $line
-					scp target/flipkart-1.0-SNAPSHOT.jar gamut@$line:/home/gamut/deploy/
+					sshpass -p "gamut" scp target/flipkart-1.0-SNAPSHOT.jar gamut@$line:/home/gamut/deploy/
 				done <"ips.txt"
 			       '''
                         }
