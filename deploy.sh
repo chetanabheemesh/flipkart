@@ -1,3 +1,8 @@
 #!/bin/bash
-
-sudo sshpass -p "gamut" scp target/flipkart-1.0-SNAPSHOT.jar gamut@172.17.0.2:/home/gamut/deploy/
+echo "Demonstrating the while reading"
+while read -r line  
+do
+	echo $line
+sudo scp target/flipkart-1.0-SNAPSHOT.jar gamut@$line:/home/gamut/deploy/
+done <"ips.txt"
+echo "deployement is done"
