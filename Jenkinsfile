@@ -31,7 +31,7 @@ agent any
 
                         withMaven(maven : 'Maven 3.6.0')
                         {
-                                sh 'mvn deploy'
+                                sh './deploy.sh'
                         }
 
                   }
