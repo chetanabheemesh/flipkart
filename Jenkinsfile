@@ -39,7 +39,7 @@ agent any
 				do
 					echo $line
 					sshpass -p "gamut" scp target/flipkart-1.0-SNAPSHOT.jar gamut@$line:/home/gamut/deploy/
-				done <"ips.txt"'
+				done <"ips.txt"
 			       '''
                         }
 
