@@ -31,11 +31,16 @@ agent any
 
                         withMaven(maven : 'Maven 3.6.0')
                         {
-                                sh 'while read -r line  
+	
+                                sh '''
+				#!/bin/bash
+				echo "Executing in Shell"
+				while read -r line  
 				do
 					echo $line
 					sshpass -p "gamut" scp target/flipkart-1.0-SNAPSHOT.jar gamut@$line:/home/gamut/deploy/
 				done <"ips.txt"'
+			       '''
                         }
 
                   }
