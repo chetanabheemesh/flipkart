@@ -1,7 +1,7 @@
 pipeline{
 agent any
 	stages {
-		stage ('Build Stage')
+		stage ('Build Stage I')
 		{
 		   steps
 		   {
@@ -12,7 +12,7 @@ agent any
 
 		}
 	}
-                stage ('Test Stage') 
+                stage ('Test Stage II') 
                 {
                    steps
                    { 
@@ -24,7 +24,7 @@ agent any
 
                   }
                 }
-		stage ('Deployment Groovey')
+		stage ('Deployment Groovey III')
                 {
                    steps
                    {
