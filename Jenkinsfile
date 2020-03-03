@@ -12,6 +12,14 @@ agent any
 
 		}
 	}
+		stage ('Contnue or Exit')
+		{
+		   steps
+		   {
+			input ('You continue or Abort Yes/No')
+
+		}
+	}
                 stage ('Test Stage II') 
                 {
                    steps
