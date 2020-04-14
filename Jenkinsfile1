@@ -22,7 +22,7 @@ pipeline
 					  sh '''
 					  #!/bin/bash 
 					  echo "Executing in Shell to dploy the jar file to cloud "
-					  scp target/flipkart-1.0-SNAPSHOT.jar linux@35.223.16.158:/home/linux/upload/
+					  scp target/flipkart-1.0-SNAPSHOT.jar 35.223.16.158:/home/linux/upload/
 					  '''
 					}
 				}
