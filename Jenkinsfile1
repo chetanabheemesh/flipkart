@@ -22,6 +22,7 @@ pipeline
 					  sh '''
 					  #!/bin/bash 
 					  echo "Executing in Shell"
+					  '''
 					}
 				}
 			}
