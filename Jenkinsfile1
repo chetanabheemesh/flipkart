@@ -13,5 +13,16 @@ pipeline
 				  }
 	
 				}
+				stage ('Deploying To google cloud')
+				{
+				steps
+				{
+					withMaven(maven :'Maven 3.6.0')
+					{
+					  sh '''
+					  #!/bin/bash 
+					  echo "Executing in Shell"
+					}
+				}
 			}
 }
